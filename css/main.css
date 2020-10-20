@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+    max-width: 1440px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-wrap {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.v-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+/* Header */
+
+.header {
+    background-color: #fa8c16;
+}
+
+.nav {
+    width: 255px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
