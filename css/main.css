@@ -2,8 +2,15 @@ html,
 body {
     margin: 0 auto;
     padding: 0;
-    background-color: white;
+    background-color: #E5E5E5;
     max-width: 1440px;
+    font-family: "SF Pro Display";
+    font-family: sans-serif;
+    color: #262626;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img {
@@ -45,15 +52,46 @@ a {
     max-width: 1200px;
 }
 
+.btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search__button {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 
 /* Header */
 
 .header {
+    min-height: 64px;
+    margin-bottom: 30px;
     background-color: #fa8c16;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 60px;
 }
 
 .nav {
     width: 255px;
+    margin-right: auto;
 }
 
 .menu {
@@ -61,4 +99,213 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.menu__link {
+    color: #fafafa;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 237px;
+    height: 32px;
+    background-color: #fff;
+    /* padding: 5px 30px 5px 12px; */
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+}
+
+.form__group {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.search__input {
+    width: 195px;
+    height: 100%;
+    padding-left: 12px;
+    border: none;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.search__input::-moz-placeholder {
+    color: #bfbfbf;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: #bfbfbf;
+}
+
+.search__input:-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+.search__input::-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+.search__input::placeholder {
+    color: #bfbfbf;
+}
+
+
+/* Main */
+
+.main {
+    padding-bottom: 132px;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/* Посты */
+
+.posts {
+    max-width: 800px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+}
+
+.post__body {
+    padding: 35px 35px 0px;
+}
+
+.post:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.post__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.post__text {
+    margin: 0;
+}
+
+.post__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+/* Теги */
+
+.tags {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 22px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tags__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.tags__link {
+    color: #BFBFBF;
+}
+
+.post__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #FAFAFA;
+    border-top: 1px solid #E8E8E8;
+    padding: 13px 36px;
+}
+
+.actions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.actions__item:not(:last-child) {
+    margin-right: 29px;
+}
+
+.icon {
+    fill: #8c8c8c;
+}
+
+.action__counter {
+    color: #8C8C8C;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.author__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.author__name {
+    color: #8C8C8C;
+}
+
+.author__time-ago {
+    color: #bfbfbf;
+}
+
+.author__avatar {
+    border-radius: 5px;
+    margin-left: 9px;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    max-width: 370px;
 }
