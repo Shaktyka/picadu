@@ -208,7 +208,55 @@
             </section>
             <aside class="sidebar">
                 <!-- user-menu -->
+                <div class="sidebar__user user">
+                    <div class="user__header">
+                        <div class="user__info">
+                            <a class="user__avatar" href="#">
+                                <img class="user__pic" src="img/avatar-2.jpg" width="40" heigth="40" alt="Аватар пользователя">
+                            </a>
+                            <span class="user__name">ladubug</span>
+                        </div>
+                        <a class="btn btn--logout" href="/logout">
+                            <span class="v-hidden">Выход</span>
+                            <svg class="icon icon--logout" width="22" height="22">
+                              <use xlink:href="img/icons.svg#logout"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__menu user-menu">
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Ответы</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Комментарии</a>
+                            </li>
+                            <li class="user-menu__item user-menu__item--active">
+                                <a class="user-menu__link" href="#">Оценки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Сохранённое</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Подписки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Заметки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Игнор-лист</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <!-- Кнопка "Опубликовать пост" -->
+                <div class="post-btn">
+                    <a class="post-btn__link" href="#">
+                        <svg class="icon icon--fire" width="12" height="14">
+                        <use xlink:href="img/icons.svg#fire"></use>
+                      </svg> Опубликовать пост
+                    </a>
+                </div>
                 <!-- Комментарий дня -->
                 <!-- Реклама -->
             </aside>
