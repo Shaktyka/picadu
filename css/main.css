@@ -1,11 +1,22 @@
+@font-face {
+    font-family: "SFProDisplay-Regular";
+    src: local("SFProDisplay-Regular"), url('../fonts/SFProDisplay-Regular.woff') format("woff"), url('../fonts/SFProDisplay-Regular.woff2') format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Semibold";
+    src: local("SFProDisplay-Semibold"), url('../fonts/SFProDisplay-Semibold.woff') format("woff"), url('../fonts/SFProDisplay-Semibold.woff2') format("woff2");
+    font-weight: 700;
+}
+
 html,
 body {
     margin: 0 auto;
     padding: 0;
     background-color: #E5E5E5;
     max-width: 1440px;
-    font-family: "SF Pro Display";
-    font-family: sans-serif;
+    font-family: "SFProDisplay-Regular", sans-serif;
     color: #262626;
     font-size: 14px;
     line-height: 22px;
@@ -204,9 +215,9 @@ a {
 .post__title {
     margin: 0;
     margin-bottom: 19px;
+    font-family: "SFProDisplay-Semibold", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 600;
 }
 
 .post__text {
@@ -322,7 +333,6 @@ a {
 
 .sidebar {
     width: 31%;
-    outline: 1px solid gray;
 }
 
 
@@ -357,7 +367,7 @@ a {
 
 .user__name {
     max-width: 214px;
-    font-weight: 600;
+    font-family: "SFProDisplay-Semibold", sans-serif;
     color: #595959;
 }
 
@@ -431,12 +441,13 @@ a {
 }
 
 .card__header-title {
-    font-weight: 600px;
+    font-family: "SFProDisplay-Semibold", sans-serif;
     margin: 0;
 }
 
 .card__link {
-    color: #595959;
+    font-family: "SFProDisplay-Semibold", sans-serif;
+    color: #D48806;
 }
 
 .card__body {
@@ -453,6 +464,7 @@ a {
 }
 
 .card__text {
+    margin: 0;
     font-size: 14px;
     line-height: 22px;
     color: #262626;
@@ -460,3 +472,29 @@ a {
 
 
 /* Реклама */
+
+.promo {
+    position: relative;
+    background-color: white;
+    border: 1px solid #E8E8E8;
+}
+
+.promo__title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 99px;
+    height: 21px;
+    margin: 0;
+    padding-left: 26px;
+    padding-right: 26px;
+    background-color: #C4C4C4;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+}
+
+.promo__link {
+    display: flex;
+}
