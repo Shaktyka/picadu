@@ -400,7 +400,11 @@ a {
 
 /* Кнопка "Опубликовать пост" */
 
-.post-btn__link {
+.add-post {
+    margin-bottom: 20px;
+}
+
+.add-post-btn__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -410,3 +414,49 @@ a {
     color: white;
     padding: 13px 30px;
 }
+
+
+/* Карточка */
+
+.card {
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #E8E8E8;
+}
+
+.card__header {
+    padding: 23px 25px;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.card__header-title {
+    font-weight: 600px;
+    margin: 0;
+}
+
+.card__link {
+    color: #595959;
+}
+
+.card__body {
+    padding: 22px 40px 30px 25px;
+}
+
+.card__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D48806;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+}
+
+
+/* Реклама */
