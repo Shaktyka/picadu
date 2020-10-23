@@ -286,6 +286,10 @@ a {
     fill: #8c8c8c;
 }
 
+.icon--search {
+    fill: #FA8C16;
+}
+
 .icon--logout {
     fill: #000000;
 }
