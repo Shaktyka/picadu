@@ -189,6 +189,10 @@ a {
     color: #bfbfbf;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 
 /* Main */
 
@@ -501,4 +505,27 @@ a {
 
 .promo__link {
     display: flex;
+}
+
+@media (max-width: 990px) {
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 20px;
+        margin-left: 12px;
+    }
+    .menu-toggle span {
+        height: 2px;
+        width: 100%;
+        background-color: white;
+    }
+    .sidebar {
+        display: none;
+    }
+    .posts {
+        width: 100%;
+    }
 }
