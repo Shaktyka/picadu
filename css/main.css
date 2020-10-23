@@ -74,6 +74,17 @@ a {
     align-items: center;
 }
 
+.btn--add-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FAAD14;
+    border-radius: 4px;
+    color: white;
+    padding: 13px 30px;
+}
+
 .search__button {
     height: 100%;
     width: 20%;
@@ -416,17 +427,6 @@ a {
 
 .add-post {
     margin-bottom: 20px;
-}
-
-.add-post-btn__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #FAAD14;
-    border-radius: 4px;
-    color: white;
-    padding: 13px 30px;
 }
 
 
