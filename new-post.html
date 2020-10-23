@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikadu New Post</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a class="logo__link" href="/">
+                    <span class="v-hidden">Pikadu</span>
+                    <img class="logo__img" src="img/logo.svg" width="47" height="12" alt="Логотип">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Горячее</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Лучшее</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Свежее</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Подписки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Сообщества</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="form search" action="#" method="get">
+                <p class="form__group">
+                    <input class="form__input search__input" type="search" name="search" placeholder="Поиск по сайту">
+                </p>
+                <button class="btn btn--search search__button" type="button">
+                  <span class="v-hidden">Поиск</span>
+                  <svg class="icon icon--search" width="16" height="16">
+                    <use xlink:href="img/icons.svg#search"></use>
+                  </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="v-hidden">Pikadu: форма добавление нового поста</h1>
+        <div class="container">
+            <section class="new-post">
+                <h2 class="v-hidden">Добавить пост</h2>
+                <form action="#" method="post">
+
+                </form>
+            </section>
+            <aside class="sidebar">
+                <!-- user-menu -->
+                <div class="sidebar__user user">
+                    <div class="user__header">
+                        <div class="user__info">
+                            <a class="user__avatar" href="#">
+                                <img class="user__pic" src="img/avatar-2.jpg" width="40" height="40" alt="Аватар пользователя">
+                            </a>
+                            <span class="user__name">ladubug</span>
+                        </div>
+                        <a class="btn btn--logout" href="/logout">
+                            <span class="v-hidden">Выход</span>
+                            <svg class="icon icon--logout" width="22" height="22">
+                          <use xlink:href="img/icons.svg#logout"></use>
+                        </svg>
+                        </a>
+                    </div>
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__menu user-menu">
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Ответы</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Комментарии</a>
+                            </li>
+                            <li class="user-menu__item user-menu__item--active">
+                                <a class="user-menu__link" href="#">Оценки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Сохранённое</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Подписки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Заметки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <a class="user-menu__link" href="#">Игнор-лист</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
