@@ -42,12 +42,17 @@
                     <input class="form__input search__input" type="search" name="search" placeholder="Поиск по сайту">
                 </p>
                 <button class="btn btn--search search__button" type="button">
-                  <span class="v-hidden">Поиск</span>
-                  <svg class="icon icon--search" width="16" height="16">
-                    <use xlink:href="img/icons.svg#search"></use>
-                  </svg>
-                </button>
+              <span class="v-hidden">Поиск</span>
+              <svg class="icon icon--search" width="16" height="16">
+                <use xlink:href="img/icons.svg#search"></use>
+              </svg>
+            </button>
             </form>
+            <a class="menu-toggle" id="menu-toggle" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
     </header>
     <main class="main">
@@ -59,11 +64,11 @@
                     <div class="new-post-form__content">
                         <div class="form__group">
                             <label class="form__label v-hidden" for="post-title">Заголовок поста</label>
-                            <input class="form__input text-input" type="text" name="post-title" id="post-title" placeholder="Заголовок поста">
+                            <input class="form__input text-input text-input--title" type="text" name="post-title" id="post-title" placeholder="Заголовок поста">
                         </div>
                         <div class="form__group">
                             <label class="form__label v-hidden" for="post-text">Текст поста</label>
-                            <textarea class="form__input text-input" name="post-text" id="post-text">Заголовок поста</textarea>
+                            <textarea class="form__input text-input text-input--text" name="post-text" id="post-text">Текст вашего поста</textarea>
                         </div>
                         <div class="form__buttons">
                             <button class="btn btn--add-post form__submit" type="submit">
@@ -71,12 +76,20 @@
                                 <use xlink:href="img/icons.svg#fire"></use>
                               </svg> Опубликовать пост
                             </button>
-                            <button class="btn btn--second" type="button">
-                              Видео
-                            </button>
-                            <button class="btn btn--second" type="button">
-                              Фото
-                            </button>
+                            <!-- <div class="form__buttons-outlined"> -->
+                            <button class="btn btn--video btn--outline" type="button">
+                                <svg class="icon icon--video" width="16" height="16">
+                                  <use xlink:href="img/icons.svg#video-camera"></use>
+                                </svg>
+                                Видео
+                              </button>
+                            <button class="btn btn--photo btn--outline" type="button">
+                                <svg class="icon icon--picture" width="16" height="16">
+                                  <use xlink:href="img/icons.svg#picture"></use>
+                                </svg>
+                                Фото
+                              </button>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </form>

@@ -82,7 +82,26 @@ a {
     background-color: #FAAD14;
     border-radius: 4px;
     color: white;
-    padding: 13px 30px;
+    padding: 17px 30px;
+}
+
+.btn--outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 125px;
+    background: #FFFFFF;
+    border: 1px solid #FFC53D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFC53D;
+    padding: 12px 16px;
+}
+
+.btn--outline .icon {
+    margin-right: 10px;
 }
 
 .search__button {
@@ -319,6 +338,11 @@ a {
     color: #8C8C8C;
 }
 
+.icon--picture,
+.icon--video {
+    fill: #FFC53D;
+}
+
 .author {
     display: flex;
     flex-direction: row;
@@ -512,6 +536,173 @@ a {
     display: flex;
 }
 
+
+/* Добавить пост */
+
+.new-post {
+    width: 67%;
+}
+
+.new-post-form {
+    width: 100%;
+}
+
+.new-post-form__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post .form__group {
+    width: 100%;
+    display: flex;
+}
+
+.new-post .form__input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    padding: 23px 31px;
+}
+
+.text-input--title {
+    margin-bottom: 16px;
+}
+
+.text-input--title::-moz-placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-input--title::-webkit-input-placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-input--title:-ms-input-placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-input--title::-ms-input-placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-input--title::placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* Текстареа */
+
+.text-input--text::-moz-placeholder {
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-input--text::-webkit-input-placeholder {
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-input--text:-ms-input-placeholder {
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-input--text::-ms-input-placeholder {
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-input--text::placeholder {
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-input--text {
+    min-height: 362px;
+    margin-bottom: 30px;
+    resize: vertical;
+}
+
+.form__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form__submit {
+    max-width: 370px;
+    margin-right: 36px;
+}
+
+.form__buttons-outlined {
+    display: flex;
+}
+
+.btn--video {
+    margin-right: 12px;
+}
+
+@media (max-width: 1110px) {
+    .form__submit {
+        width: 100%;
+        max-width: 32%;
+        margin-right: 0;
+    }
+    .btn--outline {
+        width: 100%;
+        max-width: 32%;
+    }
+    .btn--video {
+        margin-right: 0;
+    }
+    .form__buttons {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 700px) {
+    .form__submit {
+        width: 100%;
+        max-width: 100%;
+    }
+    .btn--outline {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 12px;
+    }
+    .form__buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+/* Адаптив */
+
 @media (max-width: 1270px) {
     .container {
         width: 90%;
@@ -563,7 +754,8 @@ a {
         overflow-y: auto;
         z-index: 101;
     }
-    .posts {
+    .posts,
+    .new-post {
         width: 100%;
     }
     .nav {
